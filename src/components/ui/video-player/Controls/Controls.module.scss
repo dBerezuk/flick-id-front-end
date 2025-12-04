@@ -1,0 +1,13 @@
+.controls {
+	@apply absolute bottom-5 left-1/2 -translate-x-1/2 w-[40%] mx-auto bg-easy/15 backdrop-blur-lg py-1.5 px-4 rounded-3xl z-10 transition-all hover:scale-105;
+
+	&.visibledBoxActions {
+		& > div:first-child {
+			@apply opacity-100 scale-100 pointer-events-auto;
+		}
+
+		& div:last-child {
+			@apply opacity-0 scale-75 pointer-events-none;
+		}
+	}
+}

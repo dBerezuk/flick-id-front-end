@@ -1,0 +1,7 @@
+.box {
+	@apply flex items-center gap-x-2.5;
+}
+
+.actions {
+	@apply relative bg-dark flex items-center rounded-3xl;
+}

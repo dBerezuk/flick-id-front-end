@@ -1,0 +1,11 @@
+:is(.form, .fields) {
+	@apply flex flex-col;
+}
+
+.form {
+	@apply gap-y-5;
+}
+
+.fields {
+	@apply gap-y-1;
+}

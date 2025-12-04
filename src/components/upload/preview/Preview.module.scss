@@ -1,0 +1,23 @@
+.preview {
+	@apply relative;
+}
+
+.clear {
+	@apply absolute top-1.5 right-1.5 text-red-400 hover:text-red-500 transition-colors;
+}
+
+.media {
+	@apply h-full object-cover;
+}
+
+:is(.mediaSkeleton, .media) {
+	@apply w-32 max-w-32 aspect-square flex-shrink-0;
+}
+
+:is(.mediaSkeleton, .media) {
+	@apply rounded-md;
+}
+
+.mediaSkeleton {
+	@apply h-auto;
+}

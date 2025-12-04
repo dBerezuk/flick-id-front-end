@@ -1,0 +1,27 @@
+.card {
+	@apply bg-background rounded-md;
+}
+
+.header {
+	@apply flex items-center justify-between gap-x-2.5 p-2.5;
+}
+
+.body > div svg {
+	@apply rounded-b-md overflow-hidden;
+}
+
+.title {
+	@apply font-medium;
+}
+
+.total {
+	@apply text-sm;
+}
+
+.skeletonTotal {
+	@apply max-w-24 h-5;
+}
+
+.skeletonBody {
+	@apply rounded-t-none rounded-b-md border border-background;
+}

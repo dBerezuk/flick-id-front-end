@@ -1,0 +1,15 @@
+.rating {
+	@apply flex items-center gap-x-1.5;
+
+	&.default {
+		@apply text-sm;
+	}
+
+	&.min-size {
+		@apply text-xs;
+	}
+
+	& > svg {
+		@apply text-orange-400 fill-orange-400;
+	}
+}

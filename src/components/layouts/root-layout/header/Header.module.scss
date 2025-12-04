@@ -1,0 +1,11 @@
+.header {
+	@apply grid grid-cols-[2fr_8fr_2fr] items-center gap-x-2 py-7 container;
+
+	& > div:last-child {
+		@apply justify-self-end flex justify-end w-full;
+	}
+
+	& > div:has(ul) {
+		@apply justify-self-center;
+	}
+}

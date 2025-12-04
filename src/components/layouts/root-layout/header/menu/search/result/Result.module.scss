@@ -1,0 +1,15 @@
+.result {
+	@apply absolute top-[calc(100%+0.5rem)] left-0 right-0 rounded-3xl bg-dark py-2 px-2 flex flex-col gap-y-2.5 z-20 max-h-72 overflow-y-auto transition;
+
+	&:not(.isVisibledResult) {
+		@apply opacity-0 scale-75 pointer-events-none;
+	}
+}
+
+.text {
+	@apply text-sm text-center;
+}
+
+.skeleton {
+	@apply rounded-2xl h-[3.75rem];
+}

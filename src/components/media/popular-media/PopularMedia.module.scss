@@ -1,0 +1,11 @@
+.media {
+	@apply grid grid-cols-[5fr_7fr] gap-x-4;
+}
+
+:is(.skeleton, .stub) {
+	@apply h-80 rounded-2xl;
+}
+
+.stub {
+	@apply animate-none;
+}

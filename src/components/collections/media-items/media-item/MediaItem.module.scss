@@ -1,0 +1,21 @@
+.item {
+	& > a {
+		@apply flex gap-2.5 flex-col p-2 rounded-lg hover:scale-110 transition-transform;
+	}
+}
+
+.image {
+	@apply rounded-3xl aspect-[1/1.35] object-cover;
+}
+
+.title {
+	@apply font-medium line-clamp-1;
+}
+
+.info {
+	@apply flex items-center text-sm;
+
+	& > span:not(:last-child) {
+		@apply mr-2.5 pr-2.5 border-r border-r-primary-200/20;
+	}
+}

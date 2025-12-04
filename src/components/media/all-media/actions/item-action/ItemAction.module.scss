@@ -1,0 +1,27 @@
+.item {
+	@apply h-11;
+
+	&:not(:last-child) > button::before {
+		@apply content-[''] absolute top-2 bottom-2 right-0 w-[1] bg-primary-950;
+	}
+
+	&:first-child > .button {
+		@apply rounded-l-3xl;
+	}
+
+	&:last-child > .button {
+		@apply rounded-r-3xl;
+	}
+
+	& > .button {
+		@apply relative px-6 h-full;
+
+		&.active > svg {
+			@apply scale-110;
+		}
+
+		& > svg {
+			@apply transition-transform;
+		}
+	}
+}

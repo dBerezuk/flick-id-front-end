@@ -1,0 +1,15 @@
+.header {
+	@apply flex items-center gap-x-2.5 justify-between mb-5;
+
+	& h2 {
+		@apply title;
+	}
+}
+
+.media {
+	@apply grid grid-cols-6 gap-4;
+
+	& .skeleton {
+		@apply h-[22.25rem] rounded-2xl;
+	}
+}

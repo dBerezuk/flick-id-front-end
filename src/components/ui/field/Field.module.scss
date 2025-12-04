@@ -1,0 +1,71 @@
+.field {
+	@apply relative;
+}
+
+.choice {
+	& .label {
+		@apply flex items-center gap-x-1.5 cursor-pointer transition-opacity;
+
+		&:has(.input:not(:checked)) {
+			@apply hover:opacity-70;
+		}
+	}
+
+	& .input {
+		@apply appearance-none w-4 h-4 border border-primary rounded-sm relative cursor-pointer;
+
+		&:checked::before {
+			@apply content-[''] absolute inset-px bg-primary;
+		}
+	}
+
+	& .title {
+		@apply order-1 mb-0;
+	}
+}
+
+.label {
+	@apply block w-full;
+}
+
+.title {
+	@apply inline-block text-sm mb-0.5;
+
+	&:empty {
+		@apply hidden;
+	}
+}
+
+:is(
+	.input:is([type='text'], [type='email'], [type='password'], [type='date']),
+	.textarea,
+	.select
+) {
+	@apply py-2 px-3 w-full border border-primary rounded-md transition-colors hover:border-white;
+
+	color-scheme: dark;
+}
+
+.textarea {
+	@apply min-h-16 h-16 resize-y;
+}
+
+.select {
+	appearance: none;
+}
+
+.titleSkeleton {
+	@apply h-5 max-w-20 w-full mt-0.5 mb-[0.28125rem];
+}
+
+.fieldSkeleton {
+	@apply h-[2.625rem];
+}
+
+:is(.fieldSkeleton, .textareaSkeleton) {
+	@apply rounded-md;
+}
+
+.textareaSkeleton {
+	@apply min-h-16 h-16;
+}

@@ -1,0 +1,18 @@
+.item {
+
+	&.active > a {
+		@apply bg-background;
+	}
+
+	& > a {
+		@apply flex items-center gap-x-2.5 py-2.5 px-5 text-sm font-medium hover:bg-background transition-colors;
+
+		& > .icon {
+			@apply flex-shrink-0;
+		}
+
+		& > span {
+			@apply line-clamp-1;
+		}
+	}
+}

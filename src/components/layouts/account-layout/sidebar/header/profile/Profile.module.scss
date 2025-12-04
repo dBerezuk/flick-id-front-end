@@ -1,0 +1,19 @@
+.profile {
+	@apply text-center transition-opacity;
+
+	& > :is(.avatarSkeleton, img) {
+		@apply w-[6.25rem] h-auto aspect-square rounded-full mx-auto mb-2.5;
+	}
+
+	& > .emailSkeleton {
+		@apply mx-auto max-w-36 h-6;
+	}
+
+	& > img {
+		@apply max-w-none object-cover;
+	}
+
+	& > strong {
+		@apply font-medium line-clamp-1;
+	}
+}

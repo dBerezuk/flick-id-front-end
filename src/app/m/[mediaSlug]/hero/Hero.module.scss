@@ -1,0 +1,15 @@
+.hero {
+	@apply bg-easy rounded-lg p-5 flex gap-x-5;
+}
+
+.poster {
+	@apply w-56 aspect-[224/320] shrink-0 relative;
+
+	& > img {
+		@apply w-full h-full object-cover rounded-lg;
+	}
+
+	& > span {
+		@apply absolute top-1.5 right-3;
+	}
+}

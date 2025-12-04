@@ -1,0 +1,15 @@
+.info {
+	@apply flex-grow;
+}
+
+.item {
+	@apply flex flex-col gap-y-1;
+
+	& + & {
+		@apply mt-2.5;
+	}
+
+	& > strong {
+		@apply font-medium;
+	}
+}

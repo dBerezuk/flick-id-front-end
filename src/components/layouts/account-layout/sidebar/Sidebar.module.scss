@@ -1,0 +1,30 @@
+.sidebar {
+	@apply w-52 border-r border-r-background overflow-x-hidden flex-shrink-0 transition-all;
+
+	&.collapsed {
+		@apply w-[3.875rem];
+
+		& > header {
+			@apply h-16;
+
+			& > div:first-child {
+				& > a,
+				div {
+					@apply opacity-0 pointer-events-none scale-0;
+				}
+
+				& > button {
+					@apply -rotate-180;
+				}
+			}
+
+			& > div:last-child {
+				@apply opacity-0 pointer-events-none;
+			}
+		}
+
+		& > ul > li > a > span {
+			@apply visually-hidden;
+		}
+	}
+}

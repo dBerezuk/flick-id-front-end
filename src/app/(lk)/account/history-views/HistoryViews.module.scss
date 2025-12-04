@@ -1,0 +1,11 @@
+.skeletonActions {
+	@apply w-6 h-6;
+}
+
+.history {
+	@apply flex flex-col gap-y-1;
+}
+
+.skeletonHistory {
+	@apply h-24 rounded-lg;
+}

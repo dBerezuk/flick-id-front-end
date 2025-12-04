@@ -1,0 +1,9 @@
+.item {
+	& > a {
+		@apply block py-2 px-3.5 text-sm hover:text-white transition-colors;
+	}
+
+	&:not(.active) {
+		@apply text-gray;
+	}
+}

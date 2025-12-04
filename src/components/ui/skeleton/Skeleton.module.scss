@@ -1,0 +1,15 @@
+.item {
+	@apply w-full h-10 rounded animate-pulse;
+
+	&.primary {
+		@apply bg-easy;
+	}
+
+	&.secondary {
+		@apply bg-background;
+	}
+
+	&.dark {
+		@apply bg-slate-800;
+	}
+}

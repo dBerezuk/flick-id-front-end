@@ -1,0 +1,35 @@
+.boxActions {
+	@apply absolute top-1/2 left-4 right-4 -translate-y-1/2 flex items-center justify-between opacity-0 pointer-events-none scale-75 transition;
+
+	& > ul {
+		@apply flex items-center gap-x-2.5;
+
+		& > li {
+			@apply font-medium text-sm;
+		}
+	}
+
+	& .volume {
+		@apply flex items-center gap-x-2.5;
+
+		& > input[type='range'] {
+			@apply relative appearance-none w-16 h-0.5 py-1.5 cursor-pointer;
+
+			&::-webkit-slider-thumb {
+				@apply appearance-none -translate-y-0.5 bg-primary w-2 h-2 rounded-full transition hover:scale-105 hover:bg-primary-300 active:bg-primary-300;
+			}
+
+			&::-webkit-slider-runnable-track {
+				@apply h-1 bg-easy rounded-sm;
+			}
+
+			&::before {
+				@apply content-[''] absolute left-0 top-1/2 -translate-y-1/2 h-1 pr-1 bg-primary rounded-l-sm w-[var(--width-progress)] max-w-[90%];
+			}
+
+			&.isMuted {
+				@apply before:w-0;
+			}
+		}
+	}
+}

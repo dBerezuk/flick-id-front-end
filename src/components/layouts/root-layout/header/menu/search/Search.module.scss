@@ -1,0 +1,19 @@
+.button {
+	@apply relative z-10;
+}
+
+.box {
+	@apply absolute left-1 top-1 bottom-1 right-1 rounded-full bg-primary-950 scale-75 opacity-0 pointer-events-none transition;
+
+	& > div {
+		@apply h-full;
+
+		& > label {
+			@apply h-full;
+
+			& input {
+				@apply border-none outline-none h-full !pr-14 text-sm;
+			}
+		}
+	}
+}

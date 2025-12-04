@@ -1,0 +1,11 @@
+.skeletonActions {
+	@apply w-6 h-6;
+}
+
+.watch {
+	@apply flex flex-col gap-y-1;
+}
+
+.skeletonWatch {
+	@apply h-24 rounded-lg;
+}

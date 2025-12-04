@@ -1,0 +1,7 @@
+.item {
+	@apply h-20 w-full bg-easy py-2.5 px-5 font-medium rounded-3xl border border-transparent hover:border-primary-300 hover:scale-y-105 transition;
+
+	&.active {
+		@apply border-primary-300 scale-y-105;
+	}
+}

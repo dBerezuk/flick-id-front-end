@@ -1,0 +1,29 @@
+.tr {
+	& > td {
+		@apply p-2.5 bg-background/50;
+
+		&:first-child {
+			@apply rounded-l-md;
+		}
+
+		&:last-child {
+			@apply rounded-r-md text-right;
+		}
+	}
+
+	& > .actions {
+		@apply w-28 text-right;
+
+		& > div {
+			@apply flex justify-end items-center gap-x-2.5;
+		}
+	}
+}
+
+.skeletonData {
+	@apply h-6;
+}
+
+.skeletonButton {
+	@apply w-5 h-5;
+}

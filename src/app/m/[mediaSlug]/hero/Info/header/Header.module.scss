@@ -1,0 +1,7 @@
+.header {
+	@apply flex items-center justify-between gap-x-2.5 mb-2.5;
+}
+
+.title {
+	@apply font-semibold text-2xl;
+}

@@ -1,0 +1,27 @@
+@layer base {
+	html {
+		@apply bg-no-repeat bg-background min-h-svh font-montserrat font-normal text-base text-white min-w-[75rem];
+	}
+
+	:is(input, textarea, select) {
+		@apply block bg-transparent;
+
+		&:where(&, ::placeholder) {
+			@apply text-sm;
+
+			font: inherit;
+		}
+
+		&::placeholder {
+			@apply text-white/50;
+		}
+	}
+
+	*:focus-visible {
+		@apply outline-1 outline-double outline-accent;
+	}
+
+	a {
+		@apply inline-block;
+	}
+}

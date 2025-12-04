@@ -1,0 +1,43 @@
+.item {
+	@apply h-80;
+
+	& a {
+		@apply w-full h-full relative;
+	}
+}
+
+.content {
+	@apply absolute top-6 bottom-6 flex flex-col left-5 z-10 max-w-72;
+
+	& > h3 {
+		@apply mb-auto font-semibold text-4xl leading-tight;
+	}
+
+	& > div {
+		@apply flex gap-x-1.5 opacity-80 font-medium transition-opacity;
+
+		& svg {
+			@apply transition-transform;
+		}
+	}
+}
+
+.images {
+	@apply relative w-full h-full;
+
+	.image {
+		@apply relative overflow-hidden w-full h-full brightness-[0.8] rounded-2xl will-change-transform;
+
+		& > img {
+			@apply transition-transform;
+		}
+	}
+
+	img {
+		@apply object-cover object-top will-change-transform;
+	}
+
+	.shadow {
+		@apply -z-10 blur-xl brightness-75 contrast-125 saturate-150 mix-blend-lighten will-change-transform;
+	}
+}

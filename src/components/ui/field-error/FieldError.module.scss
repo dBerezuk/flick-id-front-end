@@ -1,0 +1,7 @@
+.error {
+	@apply mt-1 text-xs leading-3 font-medium text-accent opacity-100 transition-opacity;
+
+	&:empty {
+		@apply visually-hidden;
+	}
+}

@@ -1,0 +1,37 @@
+.box {
+	@apply relative rounded-lg;
+
+	&:-webkit-full-screen {
+		& > .player {
+			@apply rounded-none !w-dvw !h-dvh;
+		}
+	}
+}
+
+.player {
+	@apply rounded-lg aspect-video object-cover transition;
+
+	&::-webkit-media-controls {
+		@apply hidden;
+	}
+
+	&.projector {
+		@apply brightness-125 contrast-125 saturate-150 blur-[2px] mix-blend-screen shadow-[0_0_80px_rgba(255,255,255,0.3)] will-change-transform;
+
+		transform: perspective(1000px) translateY(-1.2rem) rotateX(10deg) scale(0.9);
+
+		animation: projector-flicker 0.1s infinite alternate;
+	}
+}
+
+@keyframes projector-flicker {
+	0% {
+		filter: brightness(140%) contrast(120%) saturate(150%) blur(2px);
+	}
+	50% {
+		filter: brightness(135%) contrast(115%) saturate(140%) blur(2.5px);
+	}
+	100% {
+		filter: brightness(140%) contrast(120%) saturate(150%) blur(2px);
+	}
+}

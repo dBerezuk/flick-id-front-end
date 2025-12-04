@@ -1,0 +1,32 @@
+User-Agent: Yandex
+Host: https://flick-id.com
+Disallow: /auth
+Disallow: *?
+Disallow: /docs/*
+Disallow: *utm_
+Disallow: *?query=
+Disallow: /media/*?PAGEN_1=
+Disallow: *?keyword=
+Disallow: *?sub
+
+Sitemap: https://flick-id.com/sitemap.xml
+
+User-Agent: Googlebot
+Disallow: /auth
+Disallow: /docs/*
+Disallow: *utm_
+Disallow: *?query=
+Disallow: *?keyword=
+Disallow: *?sub
+
+Sitemap: https://flick-id.com/sitemap.xml
+
+User-Agent: *
+Disallow: /auth
+Disallow: /docs/*
+Disallow: *utm_
+Disallow: *?query=
+Disallow: *?keyword=
+Disallow: *?sub
+
+Sitemap: https://flick-id.com/sitemap.xml

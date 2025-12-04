@@ -1,0 +1,21 @@
+.table {
+	@apply table-fixed w-full text-left border-separate border-spacing-y-2.5 -my-2.5;
+
+	& > thead {
+		@apply bg-background;
+
+		& > tr {
+			& > th {
+				@apply font-medium py-1.5 px-3;
+
+				&:first-child {
+					@apply w-96 rounded-l-md;
+				}
+
+				&:last-child {
+					@apply w-28 rounded-r-md text-right;
+				}
+			}
+		}
+	}
+}

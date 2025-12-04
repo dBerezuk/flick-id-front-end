@@ -1,0 +1,19 @@
+.title {
+	@apply inline-block text-sm mb-0.5;
+
+	&:empty {
+		@apply hidden;
+	}
+}
+
+.content {
+	@apply flex gap-x-2;
+}
+
+.upload {
+	@apply border border-dashed rounded-md w-full flex items-center gap-x-2.5 justify-center hover:bg-background transition-colors cursor-pointer;
+
+	&.active {
+		@apply bg-background;
+	}
+}

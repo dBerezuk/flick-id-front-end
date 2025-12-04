@@ -1,0 +1,21 @@
+.content {
+	@apply grid grid-cols-3 items-center scale-100 transition;
+}
+
+.time {
+	@apply font-medium text-sm;
+}
+
+.playing {
+	@apply flex items-center gap-x-2.5 justify-self-center;
+}
+
+.actions {
+	@apply flex items-center gap-x-2.5 last:justify-self-end;
+}
+
+.quality {
+	& > button {
+		@apply font-medium text-sm;
+	}
+}

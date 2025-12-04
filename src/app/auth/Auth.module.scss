@@ -1,0 +1,27 @@
+.auth {
+	@apply container;
+}
+
+.form {
+	@apply relative max-w-80 mx-auto bg-easy mt-8 pt-11 p-6 rounded-lg;
+
+	&::before {
+		@apply content-[attr(data-first-letter)] absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex justify-center items-center bg-easy shadow font-medium text-3xl uppercase;
+	}
+}
+
+.heading {
+	@apply title text-center mb-3.5;
+}
+
+.fields {
+	@apply flex flex-col gap-y-2 mb-5;
+}
+
+.footer {
+	@apply inline-flex flex-col items-center w-full gap-y-4 text-center;
+
+	& > .info {
+		@apply flex flex-col items-center font-medium;
+	}
+}

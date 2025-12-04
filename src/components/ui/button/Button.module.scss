@@ -1,0 +1,51 @@
+.button {
+	@apply inline-block transition;
+
+	&:disabled {
+		@apply opacity-75 pointer-events-none;
+	}
+
+	&.default {
+		@apply py-2.5 px-5;
+	}
+
+	&:where(.default, .default_mini) {
+		@apply rounded-lg bg-primary-950 hover:bg-primary-900 hover:scale-[1.02];
+	}
+
+	&.default_mini {
+		@apply py-0 px-1.5;
+	}
+
+	&.plain {
+		@apply font-medium text-sm text-dark/65 hover:text-dark/40;
+	}
+
+	&.plain-primary {
+		@apply font-medium text-primary hover:text-primary-100;
+	}
+
+	&.plain-accent {
+		@apply font-medium text-accent;
+
+		&:not(.active) {
+			@apply hover:text-green-300/80;
+		}
+
+		&.active {
+			@apply text-green-400;
+		}
+	}
+
+	&.plain-red-action {
+		@apply text-accent hover:text-accent/75;
+	}
+
+	&.circle {
+		@apply center p-2 rounded-full bg-primary-950 hover:bg-primary-900 hover:scale-105;
+
+		&.active {
+			@apply bg-primary-900;
+		}
+	}
+}

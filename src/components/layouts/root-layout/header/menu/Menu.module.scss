@@ -1,0 +1,13 @@
+.menu {
+	@apply relative flex items-center gap-x-2 p-1 pl-3 rounded-3xl bg-dark;
+
+	&.isVisibledSearch {
+		& > ul {
+			@apply scale-75 opacity-0 pointer-events-none;
+		}
+
+		& > search > form {
+			@apply scale-100 opacity-100 pointer-events-auto;
+		}
+	}
+}

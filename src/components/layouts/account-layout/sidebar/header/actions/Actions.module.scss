@@ -1,0 +1,11 @@
+.actions {
+	@apply relative flex items-center gap-x-2.5 h-[1.375rem];
+
+	& > a {
+		@apply transition-all;
+	}
+}
+
+.skeleton {
+	@apply w-[1.375rem] aspect-square h-auto transition-all;
+}
