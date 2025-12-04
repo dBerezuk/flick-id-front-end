@@ -5,7 +5,34 @@ This guide explains the project, its technologies, and how to install and run it
 
 ---
 
-## 🎥 Video Demonstration
+## 🎥 Platform Preview
+
+### 📱 Screenshots
+
+<div align="center">
+  <img src="/docs/images/1.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/2.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/3.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/4.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/5.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/6.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/7.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/8.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/9.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/10.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/11.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/12.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/13.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/14.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/15.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/16.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/17.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/18.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/19.png" width="200" style="margin: 5px;">
+  <img src="/docs/images/20.png" width="200" style="margin: 5px;">
+</div>
+
+### 🎥 Video Demonstration
 
 Watch the complete platform demonstration on YouTube:
 
