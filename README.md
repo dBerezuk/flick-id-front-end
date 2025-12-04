@@ -5,6 +5,14 @@ This guide explains the project, its technologies, and how to install and run it
 
 ---
 
+## 🎥 Video Demonstration
+
+Watch the complete platform demonstration on YouTube:
+
+[![Flick.id Demo Video](https://img.shields.io/badge/🎬_Watch_Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/-uKLePrh0ys)
+
+---
+
 ## 🌟 About the Project
 
 **Flick.id** is a feature-rich movie platform with:
