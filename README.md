@@ -13,9 +13,9 @@ This guide explains the project, its technologies, and how to install and run it
 - 🎭 **Genres & filtering**
 - 🔄 **Infinite scroll pagination**
 - ▶️ **Custom video player**
+- 👤 **Account creation & profile editing**
 - ⭐ **Watch-later list**
 - 🕓 **Watch history**
-- 👤 **Account creation & profile editing**
 - 🔍 **Search functionality**
 - 🛠 **Admin panel** for managing:
   - movies  
@@ -29,21 +29,22 @@ This guide explains the project, its technologies, and how to install and run it
 
 ## 🧩 Technologies Used
 
-1. React  
-2. Next.js  
-3. SCSS  
-4. Tailwind CSS  
-5. clsx  
-6. axios  
-7. dayjs  
-8. jotai  
-9. jose  
-10. js-cookie  
-11. lucide-react  
-12. react-apexcharts  
-13. react-hook-form  
-14. react-hot-toast  
-15. react-query  
+1. JavaScript & TypeScript
+2. React  
+3. Next.js
+4. react-query
+5. jose
+6. js-cookie
+7. axios
+8. jotai
+9. dayjs
+10. react-hook-form
+11. SCSS  
+12. Tailwind CSS  
+13. clsx          
+14. lucide-react  
+15. react-apexcharts    
+16. react-hot-toast
 
 ---
 
@@ -80,7 +81,7 @@ cd flick-id-front-end
 
 ### Step 2 — Start the backend
 
-Go to the backend repository, download it, configure it, and run the API server.
+Go to the backend [repository](https://github.com/dBerezuk/flick-id-back-end), download it, configure it, and run the API server.
 
 ⚠️ The frontend requires an active backend.
 
